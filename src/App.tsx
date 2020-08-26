@@ -1,12 +1,15 @@
-import React from 'react';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+
 import Head from './components/Head'
-import logo from './logo.svg';
-import './App.css';
+import Button from './components/Button'
 
 function App() {
 	return (
 		<div className="App">
 			<Head title="Hello" isActive={true} />
+			<Button onClick={value => console.log(value)} />
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
 				<p>

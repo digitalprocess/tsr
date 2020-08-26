@@ -1,8 +1,8 @@
 import React from 'react'
 
 type Props = {
-	title: string,
-	isActive?: boolean
+	title: string // Required
+	isActive?: boolean // Optional
 }
 
 const Head = ({ title, isActive = false }: Props) => (

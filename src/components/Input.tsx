@@ -3,11 +3,9 @@ import React, { useState, useRef } from 'react'
 const Input = () => {
 	// const [name, setName] = useState<string>(''); // Explicit Type
 	const [name, setName] = useState('') // Type inference
-	const ref = useRef<HTMLInputElement>(null!)
+	const ref = useRef<HTMLInputElement>(null)
 
-	if (ref && ref.current) {
-		console.log(ref.current.value)
-	}
+	console.log(ref?.current?.value) // Optional Chaining
 
 	return (
 		<div>

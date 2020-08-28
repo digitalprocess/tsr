@@ -3,6 +3,7 @@ import { GlobalProvider }  from './components/GlobalContext'
 // import logo from './logo.svg'
 import './App.css'
 
+import BigC from './components/BigC'
 import Head from './components/Head'
 import Input from './components/Input'
 import Button from './components/Button'
@@ -13,6 +14,7 @@ function App() {
 		<GlobalProvider>
 			<div className="App">
 				<Head title="Hello" isActive={true} />
+				<BigC title="Class" />
 				<Button onClick={e => {
 					e.preventDefault()
 					console.log(e)

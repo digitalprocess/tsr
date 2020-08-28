@@ -8,7 +8,7 @@ export const initialValues = {
 
 export const GlobalContext = createContext(initialValues)
 
-type State = {
+interface State {
 	rValue: boolean
 }
 

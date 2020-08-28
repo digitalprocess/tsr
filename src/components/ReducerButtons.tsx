@@ -36,7 +36,7 @@ const ReducerButtons = () => {
 			<button onClick={() => dispatch({ type: 'one' })}>Action One</button>
 			<button onClick={() => dispatch({ type: 'two' })}>Action Two</button>
 			{/* <button onClick={() => dispatch({ type: 'tow' })}>Action Three</button> */}
-			{state && state.rValue && <div>Hi</div>}
+			{state && state.rValue && <div>Hi!</div>}
 		</div>
 	) }
 

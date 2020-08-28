@@ -1,5 +1,5 @@
 import React from 'react'
-import { GlobalContext, initialValues }  from './components/GlobalContext'
+import { GlobalProvider }  from './components/GlobalContext'
 // import logo from './logo.svg'
 import './App.css'
 
@@ -10,7 +10,7 @@ import ReducerButtons from './components/ReducerButtons'
 
 function App() {
 	return (
-		<GlobalContext.Provider value={initialValues}>
+		<GlobalProvider>
 			<div className="App">
 				<Head title="Hello" isActive={true} />
 				<Button onClick={e => {
@@ -22,7 +22,7 @@ function App() {
 				<Input />
 				<ReducerButtons />
 			</div>
-		</GlobalContext.Provider>
+		</GlobalProvider>
 	)
 }
 
